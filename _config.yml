@@ -1,0 +1,34 @@
+---
+
+port: 4000
+host: 0.0.0.0
+safe: false
+
+
+### site serving configuration ###
+exclude: [CNAME, README.md, .gitignore]
+permalink: / ## disables post output
+timezone: null
+lsi: false
+markdown: kramdown
+highlighter: pygments
+
+
+### content configuration ###
+title:       "Automatune - Procedural Music Editor"
+keywords:    ""
+description: "A new way to discover and share melodies."
+source_link: ""
+favicon:     "img/favicon.ico"
+touch_icon:  
+google_analytics_key: UA-24440376-12
+
+### template colors, used site-wide via css ###
+colors:
+  black:     '#111111'
+  white:     '#f8f8f8'
+  blue:      '#49a7e9'
+  green:     '#63BD2F'
+  purple:    '#c869bf'
+  orange:    '#BF455B'
+  turquoise: '#0fbfcf'
