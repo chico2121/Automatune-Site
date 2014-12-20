@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Automatune</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="lib/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="lib/jquery-ui.theme.css">
+		<link rel="stylesheet" type="text/css" href="lib/ohsnap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-24440376-12', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+	</head>
+	<body>
+		<div class="pageCenter">
+            <div class="pageContainer">
+                <ul id="menubar">
+                    <li class="menu-automatune"><span><img class="logo" src="images/logo-icon.png" />Automatune</span></li>
+                    <li class="menu-file"><span>File</span></li>
+                    <li class="menu-edit"><span>Edit</span></li>
+                    <li class="menu-sound"><span>Sound</span></li>
+                    <span class="titlebarText">Version: Prototype/Pre-Alpha</span>
+                </ul>
+                <div class="gameContainer" id="automatune"></div>
+                <div class="sidebar">
+                    <div class="playback-controls">
+                        <div id="playback-reset" class="playback-icon" onclick="Automatune.reset();"><img src="images/playback-reset.svg" /></div>
+                        <div id="playback-play" class="playback-icon" onclick="Automatune.play();"><img src="images/playback-play.svg" /></div>
+                        <div id="playback-pause" class="playback-icon" onclick="Automatune.pause();"><img src="images/playback-pause.svg" /></div>
+                    </div>
+                    <div id="automatune-instructions">
+                        <p style="font-weight: bold;">Instructions:</p>
+                        <p>Click a tile to add an arrow. Click again to change direction. Right click to assign a note.</p>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div id="ohsnap"></div>
+            </div>
+		</div>
+		<div id="automatune-about" title="About Automatune" style="display: none;">
+		    <h3 style="text-align: center;"><img src="images/logo-icon.png" style="vertical-align: middle; position: relative; top: -0.1em; margin-right: 0.5em; width: 2em; height: 2em" />Automatune</h3>
+		    <p>Version: Prototype/Pre-Alpha</p>
+		    <p>Created by <a href="http://www.maxlaumeister.com/" target="_blank">Maximillian&nbsp;Laumeister</a></p>
+		</div>
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="automatune.min.js"></script>
+	</body>
+</html>
