@@ -380,8 +380,21 @@ nav ul li:hover, nav ul li.active {
   background: none repeat scroll 0 0 black;
   color: #FFFFFF !important;
 }
+
 #intro .button.blue:hover {
   background: none repeat scroll 0 0 #444444;
+}
+
+.socialButtons {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    height: 20px;
+    line-height: 10px;
+}
+
+.fb_iframe_widget {
+    
 }
 
 .youtubeEmbed {
