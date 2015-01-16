@@ -16,7 +16,7 @@ highlighter: pygments
 
 ### content configuration ###
 title:       "Automatune - Procedural Music Editor"
-keywords:    ""
+keywords:    "procedural music, grid, grid-based, UCSC, University of California Santa Cruz, Maximillian Laumeister"
 description: "A new way to discover and share melodies."
 source_link: ""
 favicon:     "img/favicon.ico"
