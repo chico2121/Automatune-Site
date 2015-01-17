@@ -30,10 +30,10 @@ body {
 
 #menubar {
     text-align: left;
-    height: 4vmin;
+    height: 20px;
     margin: 0;
-    padding: 1vmin;
-    font-size: 2.5vmin;
+    padding: 5px;
+    font-size: 15px;
     list-style-type: none;
 	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
 	-webkit-touch-callout: none;
@@ -46,10 +46,10 @@ body {
 
 #menubar > li {
     display: inline-block;
-    padding: 0 1vmin;
+    padding: 0 5px;
     margin: 0;
-    height: 4vmin;
-    line-height: 4vmin;
+    height: 20px;
+    line-height: 20px;
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
     cursor: pointer;
@@ -76,13 +76,14 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 1.5vmin;
+    margin: 5px;
+    line-height: 10px;
 }
 
 .separator {
     position: absolute;
     left: 0;
-    top: 6vmin;
+    top: 30px;
     width: 100%;
     border-bottom: solid gray 1px;
 }
@@ -91,9 +92,10 @@ body {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	width: 89vmin;
-	height: 89vmin;
+	width: calc(95vmin - 30px);
+	height: calc(95vmin - 30px);
 	background-color: black;
+	font-size: 100%;
 	-moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
@@ -111,6 +113,10 @@ body {
 #automatune-instructions {
     color: gray;
     text-align: left;
+}
+
+#automatune-instructions a {
+    color: #CCCCCC;
 }
 
 .playback-controls {
@@ -153,7 +159,7 @@ body {
 }
 
 /* TODO: Display this button after it gets implemented */
-#playback-reset {
+.playback-reset {
     display: none;
 }
 
@@ -190,6 +196,20 @@ body {
     visibility: visible;
 }
 
+.gridCellProperty > img {
+    width: 100%;
+	height: 100%;
+}
+
+.modifiersContainer {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    text-align: right;
+}
+
 .gridVisitor {
 	position: absolute;
 	background-color: white;
@@ -198,17 +218,15 @@ body {
 }
 
 .tileicon {
-    position: absolute;
+    display: inline-block;
+}
+
+.tileicon.note {
+    margin: 5%;
     width: 15%;
     height: 15%;
     border-radius: 50%;
     background-color: white;
-    pointer-events: none;
-}
-
-.tileicon.note {
-    top: 10%;
-    right: 10%;
 }
 
 .floatnote {
