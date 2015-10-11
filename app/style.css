@@ -2,14 +2,16 @@ body {
 	margin: 0;
 	color: white;
 	background-color: black;
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+    font-size: 15px;
 }
 
-::-moz-selection { /* Code for Firefox */
+:not(input)::-moz-selection { /* Code for Firefox */
     color: black;
     background: white;
 }
 
-::selection {
+:not(input)::selection {
     color: black; 
     background: white;
 }
@@ -26,16 +28,16 @@ body {
 	height: 95vmin;
 	border: 1px solid rgba(255, 255, 255, .5);
 	background-color: black;
+	text-align: left;
 }
 
 #menubar {
+    display: inline-block;
     text-align: left;
     height: 20px;
     margin: 0;
     padding: 5px;
-    font-size: 15px;
     list-style-type: none;
-	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -49,10 +51,23 @@ body {
     padding: 0 5px;
     margin: 0;
     height: 20px;
-    line-height: 20px;
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
     cursor: pointer;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.source-code-link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    margin: 5px;
+}
+
+.source-code-link a {
+    color: gray;
 }
 
 #menubar > li > span {
@@ -64,7 +79,8 @@ body {
     top: -0.15vmin;
     height: 3vmin;
     vertical-align: middle;
-    margin-right: 1vmin;
+    margin-right: 0.5vmin;
+    height: 100%;
 }
 
 #menubar > li:hover {
@@ -113,6 +129,8 @@ body {
 #automatune-instructions {
     color: gray;
     text-align: left;
+    border: solid gray 1px;
+    padding: 0 10px;
 }
 
 #automatune-instructions a {
@@ -161,6 +179,18 @@ body {
 /* TODO: Display this button after it gets implemented */
 .playback-reset {
     display: none;
+}
+
+#share-this-tune {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #3F5AA6;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border-radius: 11px;
+    cursor: pointer;
 }
 
 .gridCellDiv {
