@@ -401,10 +401,8 @@ nav ul li:hover, nav ul li.active {
     width: 100%;
 }
 
-@media (max-height: 950px) {
-    #intro > .container {
-        top: -80px;
-    }
+#intro > .container {
+    top: -80px;
 }
 
 @media (max-height: 880px) {

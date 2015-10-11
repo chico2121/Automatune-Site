@@ -27,7 +27,7 @@
 	<script type="text/javascript">
     <!--
     // Redirect hack, because GitHub serves at github.io as well as the CNAME'd url.
-    if (window.location != "http://www.automatune.com/") {
+    if (window.location !== "http://www.automatune.com/" && window.location.indexOf("localhost") === -1) {
         window.location = "http://www.automatune.com/"
     }
     //-->
